@@ -1,0 +1,19 @@
+<script>
+var today =new date();
+var hourNow = today.getHours();
+var ;
+
+if (hourNow > 18) {
+greeting = 'good evening!';
+}
+else if (hourNow > 12) {
+greeting = 'Good afternoon!';
+}
+else if (hourNow > 0) {
+greeting = 'Good morning';
+}
+else{
+greeting = 'welcome';
+}
+document.write('<h3>' + greeting + '</h3>);
+</script>

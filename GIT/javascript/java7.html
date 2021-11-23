@@ -1,0 +1,54 @@
+<script>
+var car = ["Audi", "BMW", "Benz", "Bentley", "Jagwar", "Rolls-Royce","Ferrari","Tesla"];
+for (var i = 0; i < car.length; i++)
+{
+document.write(car[i] + " ");
+}
+document.write( "<br> String Reverse : ");
+car.reverse();
+for (var i = 0; i < car.length; i++) 
+{
+document.write( car[i] + " ");
+}
+document.write("<br> ");
+document.write("Array length : " + car.length);
+document.write("<br> Push Method");
+car.push("Nexus");
+for (var i = 0; i < car.length; i++) 
+{
+document.write( car[i] + " ");
+}
+document.write("<br> Pop Method : ");
+car.pop();
+for (var i = 0; i < car.length; i++) 
+{
+document.write( car[i] + " ");
+}
+document.write("<br> Shift Method : ");
+car.shift();
+for (var i = 0; i < car.length; i++) 
+{
+document.write(car[i] + " ");
+}
+document.write("<br> Unshift Method : ");
+car.unshift("Volvo");
+for (var i = 0; i < car.length; i++) 
+{
+document.write(car[i] + " ");
+}
+document.write("<br> Splice Method : ");
+car.splice(3, 0, "Lambargini", "Benz","Tesla");
+for (var i = 0; i < car.length; i++) 
+{
+document.write(car[i] + " ");
+}
+document.write("<br> Slice Method : ");
+var x = car.slice(1, 3);
+document.write(x);
+document.write("<br> Sort : ");
+car.sort();
+for (var i = 0; i < car.length; i++) 
+{
+document.write(car[i] + " ");
+}
+</script>

@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function emp(id,name,address,Mobile,dob,course)
+{
+this.id=id;
+this.name=name;
+this.address=address;
+this.Mobile=Mobile;
+this.dob=dob;
+this.course=course;
+this.changeaddress=changeaddress;
+function changeaddress(otheraddress)
+{
+this.address=otheraddress; 
+} 
+}
+e=new emp(21267,"Pavan Kumar","atmakur",9398571570,1999,"java");
+document.write(e.id+" "+e.name+" "+e.address+" "+e.Mobile+" "+e.dob+" "+e.course);
+e.changeaddress("atmakur,nellore dt");
+document.write("<br>"+e.id+" "+e.name+" "+e.address+" "+e.Mobile+" "+e.dob+" "+e.course);
+</script>
+</body>
+</html>
